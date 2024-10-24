@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B703C6E02C916938000B41E1 /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703C6DF2C916938000B41E1 /* AppointmentVC.swift */; };
+		B703C6E32C916D25000B41E1 /* AppointmentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703C6E12C916D25000B41E1 /* AppointmentListTableViewCell.swift */; };
+		B703C6E42C916D25000B41E1 /* AppointmentListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B703C6E22C916D25000B41E1 /* AppointmentListTableViewCell.xib */; };
+		B703C6E62C916EF3000B41E1 /* PatientAppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703C6E52C916EF3000B41E1 /* PatientAppointmentsVC.swift */; };
+		B723CB142C89A2E700ADEBBC /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723CB132C89A2E700ADEBBC /* ServiceBase.swift */; };
+		B723CB162C89A69A00ADEBBC /* ApiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723CB152C89A69A00ADEBBC /* ApiList.swift */; };
+		B723CB182C89B15600ADEBBC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723CB172C89B15600ADEBBC /* LoginVC.swift */; };
+		B723CB1B2C89B5C000ADEBBC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723CB1A2C89B5C000ADEBBC /* LoginModel.swift */; };
+		B723CB1E2C89B5FF00ADEBBC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723CB1D2C89B5FF00ADEBBC /* LoginViewModel.swift */; };
+		B723CB202C89C2EA00ADEBBC /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B723CB1F2C89C2EA00ADEBBC /* GetStartedVC.swift */; };
+		B733C7F62C60E14B005AF456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733C7F52C60E14B005AF456 /* AppDelegate.swift */; };
+		B733C7F82C60E14B005AF456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733C7F72C60E14B005AF456 /* SceneDelegate.swift */; };
+		B733C7FA2C60E14B005AF456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733C7F92C60E14B005AF456 /* ViewController.swift */; };
+		B733C7FD2C60E14B005AF456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B733C7FB2C60E14B005AF456 /* Main.storyboard */; };
+		B733C7FF2C60E14C005AF456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B733C7FE2C60E14C005AF456 /* Assets.xcassets */; };
+		B733C8022C60E14C005AF456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B733C8002C60E14C005AF456 /* LaunchScreen.storyboard */; };
+		B745CB662C731EB300867C43 /* PatientListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745CB642C731EB300867C43 /* PatientListTableViewCell.swift */; };
+		B745CB672C731EB300867C43 /* PatientListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B745CB652C731EB300867C43 /* PatientListTableViewCell.xib */; };
+		B745CB692C73221B00867C43 /* PatientListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745CB682C73221B00867C43 /* PatientListVC.swift */; };
+		B77AB3002C8EEA7E00B34D26 /* PatientEditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AB2FF2C8EEA7E00B34D26 /* PatientEditProfileVC.swift */; };
+		B78703242C8EF2E800183BBD /* DPatientProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78703232C8EF2E800183BBD /* DPatientProfileVC.swift */; };
+		B7972EC82C8EACC90087CD14 /* LoaderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7972EC72C8EACC90087CD14 /* LoaderHelper.swift */; };
+		B7972ED02C8EBD450087CD14 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = B7972ECF2C8EBD450087CD14 /* NVActivityIndicatorView */; };
+		B7972ED22C8EBD450087CD14 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = B7972ED12C8EBD450087CD14 /* NVActivityIndicatorViewExtended */; };
+		B7972ED52C8EBD630087CD14 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B7972ED42C8EBD630087CD14 /* IQKeyboardManagerSwift */; };
+		B7B0FB132C64C8E40045854D /* BasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B0FB122C64C8E40045854D /* BasicVC.swift */; };
+		B7B604382CC7AB1C0079EB52 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B7B604372CC7AB1C0079EB52 /* Alamofire */; };
+		B7F733FC2C7339350095E5F4 /* BookAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F733FB2C7339350095E5F4 /* BookAppointmentVC.swift */; };
+		B7F8B0D92CC8BDA40067C6E2 /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8B0D82CC8BDA40067C6E2 /* ToastManager.swift */; };
+		B7F8B11C2CC8CF0B0067C6E2 /* DHomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8B11B2CC8CF0B0067C6E2 /* DHomePageVC.swift */; };
+		B7F8B11F2CC8D9020067C6E2 /* DMyAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8B11E2CC8D9020067C6E2 /* DMyAppointmentVC.swift */; };
+		B7F8B1212CC8D9DC0067C6E2 /* DHomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8B1202CC8D9DC0067C6E2 /* DHomeTabBarController.swift */; };
+		B7FCF1DC2C7C4B5D00113F28 /* MedicationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FCF1DB2C7C4B5D00113F28 /* MedicationVC.swift */; };
+		B7FCF1DF2C7C4C1D00113F28 /* MedicineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FCF1DD2C7C4C1D00113F28 /* MedicineListTableViewCell.swift */; };
+		B7FCF1E02C7C4C1D00113F28 /* MedicineListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FCF1DE2C7C4C1D00113F28 /* MedicineListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B703C6DF2C916938000B41E1 /* AppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentVC.swift; sourceTree = "<group>"; };
+		B703C6E12C916D25000B41E1 /* AppointmentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListTableViewCell.swift; sourceTree = "<group>"; };
+		B703C6E22C916D25000B41E1 /* AppointmentListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentListTableViewCell.xib; sourceTree = "<group>"; };
+		B703C6E52C916EF3000B41E1 /* PatientAppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAppointmentsVC.swift; sourceTree = "<group>"; };
+		B723CB132C89A2E700ADEBBC /* ServiceBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBase.swift; sourceTree = "<group>"; };
+		B723CB152C89A69A00ADEBBC /* ApiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiList.swift; sourceTree = "<group>"; };
+		B723CB172C89B15600ADEBBC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B723CB1A2C89B5C000ADEBBC /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		B723CB1D2C89B5FF00ADEBBC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B723CB1F2C89C2EA00ADEBBC /* GetStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
+		B733C7F22C60E14B005AF456 /* CardiacticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardiacticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B733C7F52C60E14B005AF456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B733C7F72C60E14B005AF456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B733C7F92C60E14B005AF456 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B733C7FC2C60E14B005AF456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B733C7FE2C60E14C005AF456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B733C8012C60E14C005AF456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B733C8032C60E14C005AF456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B745CB642C731EB300867C43 /* PatientListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListTableViewCell.swift; sourceTree = "<group>"; };
+		B745CB652C731EB300867C43 /* PatientListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientListTableViewCell.xib; sourceTree = "<group>"; };
+		B745CB682C73221B00867C43 /* PatientListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListVC.swift; sourceTree = "<group>"; };
+		B77AB2FF2C8EEA7E00B34D26 /* PatientEditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientEditProfileVC.swift; sourceTree = "<group>"; };
+		B78703232C8EF2E800183BBD /* DPatientProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPatientProfileVC.swift; sourceTree = "<group>"; };
+		B7972EC72C8EACC90087CD14 /* LoaderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderHelper.swift; sourceTree = "<group>"; };
+		B7B0FB122C64C8E40045854D /* BasicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVC.swift; sourceTree = "<group>"; };
+		B7F733FB2C7339350095E5F4 /* BookAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentVC.swift; sourceTree = "<group>"; };
+		B7F8B0D82CC8BDA40067C6E2 /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		B7F8B11B2CC8CF0B0067C6E2 /* DHomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHomePageVC.swift; sourceTree = "<group>"; };
+		B7F8B11E2CC8D9020067C6E2 /* DMyAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMyAppointmentVC.swift; sourceTree = "<group>"; };
+		B7F8B1202CC8D9DC0067C6E2 /* DHomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHomeTabBarController.swift; sourceTree = "<group>"; };
+		B7FCF1DB2C7C4B5D00113F28 /* MedicationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationVC.swift; sourceTree = "<group>"; };
+		B7FCF1DD2C7C4C1D00113F28 /* MedicineListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListTableViewCell.swift; sourceTree = "<group>"; };
+		B7FCF1DE2C7C4C1D00113F28 /* MedicineListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineListTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B733C7EF2C60E14B005AF456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B604382CC7AB1C0079EB52 /* Alamofire in Frameworks */,
+				B7972ED52C8EBD630087CD14 /* IQKeyboardManagerSwift in Frameworks */,
+				B7972ED22C8EBD450087CD14 /* NVActivityIndicatorViewExtended in Frameworks */,
+				B7972ED02C8EBD450087CD14 /* NVActivityIndicatorView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B723CB122C89A2BB00ADEBBC /* AF */ = {
+			isa = PBXGroup;
+			children = (
+				B723CB132C89A2E700ADEBBC /* ServiceBase.swift */,
+				B723CB152C89A69A00ADEBBC /* ApiList.swift */,
+			);
+			path = AF;
+			sourceTree = "<group>";
+		};
+		B723CB192C89B5AA00ADEBBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B723CB1A2C89B5C000ADEBBC /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B723CB1C2C89B5E100ADEBBC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B723CB1D2C89B5FF00ADEBBC /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B733C7E92C60E14B005AF456 = {
+			isa = PBXGroup;
+			children = (
+				B733C7F42C60E14B005AF456 /* CardiacticApp */,
+				B733C7F32C60E14B005AF456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B733C7F32C60E14B005AF456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B733C7F22C60E14B005AF456 /* CardiacticApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B733C7F42C60E14B005AF456 /* CardiacticApp */ = {
+			isa = PBXGroup;
+			children = (
+				B733C7F52C60E14B005AF456 /* AppDelegate.swift */,
+				B733C7F72C60E14B005AF456 /* SceneDelegate.swift */,
+				B733C7F92C60E14B005AF456 /* ViewController.swift */,
+				B7B0FB122C64C8E40045854D /* BasicVC.swift */,
+				B7F8B0D82CC8BDA40067C6E2 /* ToastManager.swift */,
+				B7972EC72C8EACC90087CD14 /* LoaderHelper.swift */,
+				B723CB122C89A2BB00ADEBBC /* AF */,
+				B723CB1C2C89B5E100ADEBBC /* ViewModel */,
+				B723CB192C89B5AA00ADEBBC /* Model */,
+				B745CB6A2C73222200867C43 /* ViewControllers */,
+				B745CB632C731E6B00867C43 /* TableViewCells */,
+				B733C7FB2C60E14B005AF456 /* Main.storyboard */,
+				B733C7FE2C60E14C005AF456 /* Assets.xcassets */,
+				B733C8002C60E14C005AF456 /* LaunchScreen.storyboard */,
+				B733C8032C60E14C005AF456 /* Info.plist */,
+			);
+			path = CardiacticApp;
+			sourceTree = "<group>";
+		};
+		B745CB632C731E6B00867C43 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B745CB642C731EB300867C43 /* PatientListTableViewCell.swift */,
+				B745CB652C731EB300867C43 /* PatientListTableViewCell.xib */,
+				B7FCF1DD2C7C4C1D00113F28 /* MedicineListTableViewCell.swift */,
+				B7FCF1DE2C7C4C1D00113F28 /* MedicineListTableViewCell.xib */,
+				B703C6E12C916D25000B41E1 /* AppointmentListTableViewCell.swift */,
+				B703C6E22C916D25000B41E1 /* AppointmentListTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B745CB6A2C73222200867C43 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8B11D2CC8CF100067C6E2 /* Doctor */,
+				B723CB172C89B15600ADEBBC /* LoginVC.swift */,
+				B723CB1F2C89C2EA00ADEBBC /* GetStartedVC.swift */,
+				B745CB682C73221B00867C43 /* PatientListVC.swift */,
+				B7F733FB2C7339350095E5F4 /* BookAppointmentVC.swift */,
+				B7FCF1DB2C7C4B5D00113F28 /* MedicationVC.swift */,
+				B77AB2FF2C8EEA7E00B34D26 /* PatientEditProfileVC.swift */,
+				B78703232C8EF2E800183BBD /* DPatientProfileVC.swift */,
+				B703C6DF2C916938000B41E1 /* AppointmentVC.swift */,
+				B703C6E52C916EF3000B41E1 /* PatientAppointmentsVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B7F8B11D2CC8CF100067C6E2 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8B1202CC8D9DC0067C6E2 /* DHomeTabBarController.swift */,
+				B7F8B11B2CC8CF0B0067C6E2 /* DHomePageVC.swift */,
+				B7F8B11E2CC8D9020067C6E2 /* DMyAppointmentVC.swift */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B733C7F12C60E14B005AF456 /* CardiacticApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B733C8062C60E14C005AF456 /* Build configuration list for PBXNativeTarget "CardiacticApp" */;
+			buildPhases = (
+				B733C7EE2C60E14B005AF456 /* Sources */,
+				B733C7EF2C60E14B005AF456 /* Frameworks */,
+				B733C7F02C60E14B005AF456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardiacticApp;
+			packageProductDependencies = (
+				B7972ECF2C8EBD450087CD14 /* NVActivityIndicatorView */,
+				B7972ED12C8EBD450087CD14 /* NVActivityIndicatorViewExtended */,
+				B7972ED42C8EBD630087CD14 /* IQKeyboardManagerSwift */,
+				B7B604372CC7AB1C0079EB52 /* Alamofire */,
+			);
+			productName = CardiacticApp;
+			productReference = B733C7F22C60E14B005AF456 /* CardiacticApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B733C7EA2C60E14B005AF456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					B733C7F12C60E14B005AF456 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = B733C7ED2C60E14B005AF456 /* Build configuration list for PBXProject "CardiacticApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B733C7E92C60E14B005AF456;
+			packageReferences = (
+				B7972ECE2C8EBD450087CD14 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				B7972ED32C8EBD630087CD14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				B7B604362CC7AB1C0079EB52 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = B733C7F32C60E14B005AF456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B733C7F12C60E14B005AF456 /* CardiacticApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B733C7F02C60E14B005AF456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B733C8022C60E14C005AF456 /* LaunchScreen.storyboard in Resources */,
+				B745CB672C731EB300867C43 /* PatientListTableViewCell.xib in Resources */,
+				B703C6E42C916D25000B41E1 /* AppointmentListTableViewCell.xib in Resources */,
+				B733C7FF2C60E14C005AF456 /* Assets.xcassets in Resources */,
+				B733C7FD2C60E14B005AF456 /* Main.storyboard in Resources */,
+				B7FCF1E02C7C4C1D00113F28 /* MedicineListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B733C7EE2C60E14B005AF456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B723CB202C89C2EA00ADEBBC /* GetStartedVC.swift in Sources */,
+				B78703242C8EF2E800183BBD /* DPatientProfileVC.swift in Sources */,
+				B733C7FA2C60E14B005AF456 /* ViewController.swift in Sources */,
+				B703C6E02C916938000B41E1 /* AppointmentVC.swift in Sources */,
+				B733C7F62C60E14B005AF456 /* AppDelegate.swift in Sources */,
+				B7F8B0D92CC8BDA40067C6E2 /* ToastManager.swift in Sources */,
+				B723CB182C89B15600ADEBBC /* LoginVC.swift in Sources */,
+				B7972EC82C8EACC90087CD14 /* LoaderHelper.swift in Sources */,
+				B733C7F82C60E14B005AF456 /* SceneDelegate.swift in Sources */,
+				B7FCF1DC2C7C4B5D00113F28 /* MedicationVC.swift in Sources */,
+				B745CB662C731EB300867C43 /* PatientListTableViewCell.swift in Sources */,
+				B723CB1E2C89B5FF00ADEBBC /* LoginViewModel.swift in Sources */,
+				B7F8B11C2CC8CF0B0067C6E2 /* DHomePageVC.swift in Sources */,
+				B745CB692C73221B00867C43 /* PatientListVC.swift in Sources */,
+				B723CB142C89A2E700ADEBBC /* ServiceBase.swift in Sources */,
+				B703C6E62C916EF3000B41E1 /* PatientAppointmentsVC.swift in Sources */,
+				B723CB1B2C89B5C000ADEBBC /* LoginModel.swift in Sources */,
+				B7F8B1212CC8D9DC0067C6E2 /* DHomeTabBarController.swift in Sources */,
+				B7B0FB132C64C8E40045854D /* BasicVC.swift in Sources */,
+				B7FCF1DF2C7C4C1D00113F28 /* MedicineListTableViewCell.swift in Sources */,
+				B7F8B11F2CC8D9020067C6E2 /* DMyAppointmentVC.swift in Sources */,
+				B77AB3002C8EEA7E00B34D26 /* PatientEditProfileVC.swift in Sources */,
+				B7F733FC2C7339350095E5F4 /* BookAppointmentVC.swift in Sources */,
+				B723CB162C89A69A00ADEBBC /* ApiList.swift in Sources */,
+				B703C6E32C916D25000B41E1 /* AppointmentListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B733C7FB2C60E14B005AF456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B733C7FC2C60E14B005AF456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B733C8002C60E14C005AF456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B733C8012C60E14C005AF456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B733C8042C60E14C005AF456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B733C8052C60E14C005AF456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B733C8072C60E14C005AF456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YB8U886666;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardiacticApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saveetha.CardiacticApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B733C8082C60E14C005AF456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YB8U886666;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardiacticApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saveetha.CardiacticApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B733C7ED2C60E14B005AF456 /* Build configuration list for PBXProject "CardiacticApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B733C8042C60E14C005AF456 /* Debug */,
+				B733C8052C60E14C005AF456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B733C8062C60E14C005AF456 /* Build configuration list for PBXNativeTarget "CardiacticApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B733C8072C60E14C005AF456 /* Debug */,
+				B733C8082C60E14C005AF456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7972ECE2C8EBD450087CD14 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		B7972ED32C8EBD630087CD14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+		B7B604362CC7AB1C0079EB52 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7972ECF2C8EBD450087CD14 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7972ECE2C8EBD450087CD14 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		B7972ED12C8EBD450087CD14 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7972ECE2C8EBD450087CD14 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		B7972ED42C8EBD630087CD14 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7972ED32C8EBD630087CD14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		B7B604372CC7AB1C0079EB52 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7B604362CC7AB1C0079EB52 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B733C7EA2C60E14B005AF456 /* Project object */;
+}
