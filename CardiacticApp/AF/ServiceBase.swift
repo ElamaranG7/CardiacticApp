@@ -21,7 +21,7 @@ class APIHandler {
                 switch response.result {
                 case .success(let decodedData):
                     onCompletion(.success(decodedData))
-                    print("decodedData : \(decodedData)")
+                    print("ResponseData : \(decodedData)")
                 case .failure(let error):
                     onCompletion(.failure(error))
                 }

@@ -12,7 +12,7 @@ class PatientListTableViewCell: UITableViewCell {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
-    @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var stageLabel: UILabel!
     @IBOutlet weak var patientImage: UIImageView!
     @IBOutlet weak var conditionLabel: UILabel!
     

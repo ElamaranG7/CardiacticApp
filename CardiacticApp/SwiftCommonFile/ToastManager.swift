@@ -13,29 +13,31 @@ class ToastManager {
     
     static let DELAY_SHORT: TimeInterval = 1.5
     static let DELAY_LONG: TimeInterval = 3.0
+    
     private init() {}
     
     func showToast(message: String, in view: UIView, delay: TimeInterval = DELAY_SHORT) {
         let toastLabel = createToastLabel(with: message)
         view.addSubview(toastLabel)
-
+        
+        // Set constraints with a fixed width and height for the toast
         NSLayoutConstraint.activate([
             toastLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            toastLabel.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 15),
-            toastLabel.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -15),
-            toastLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
+            toastLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 300),
+            toastLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
+            toastLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 50)
         ])
 
         animateToast(toastLabel, delay: delay)
     }
-
+    
     private func createToastLabel(with message: String) -> UILabel {
         let label = UILabel()
         label.backgroundColor = UIColor(white: 0, alpha: 0.7)
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        label.text = message
+        label.text = "  \(message)  "  // Adding padding around text
         label.alpha = 0
         label.numberOfLines = 0
         label.layer.cornerRadius = 8
@@ -43,7 +45,7 @@ class ToastManager {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }
-
+    
     private func animateToast(_ label: UILabel, delay: TimeInterval) {
         UIView.animate(withDuration: 0.3, animations: {
             label.alpha = 1.0

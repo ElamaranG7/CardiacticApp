@@ -10,20 +10,18 @@ import UIKit
 
 class LoginViewModel {
     
-    
-    var data : LoginModel?
-    
-    func login(userInfo:[String: String],complition: @escaping (LoginModel?) -> Void) {
+        
+    func loginApiCall(userInfo:[String: String],completion: @escaping (LoginModel?) -> Void) {
         
         APIHandler().apiRequest(type: LoginModel.self, apiUrl: APIList().url(for: .dLoginUrl), method: .post, formData: userInfo) { result in
             switch result {
             case .success(let data):
-
-                complition(data)
+                
+                completion(data)
                 
             case .failure(let error):
                 print(error)
-                complition (nil)
+                completion (nil)
                 
             }
         }

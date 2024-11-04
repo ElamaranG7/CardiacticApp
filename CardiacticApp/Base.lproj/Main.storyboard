@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="1046.5648854961833" y="-34.507042253521128"/>
         </scene>
-        <!--View Controller-->
+        <!--Role SelectionVC-->
         <scene sceneID="omL-EM-0zg">
             <objects>
-                <viewController id="c85-Y2-khN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoleSelectionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c85-Y2-khN" customClass="RoleSelectionVC" customModule="CardiacticApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hsk-fm-SMS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doctorTapButton:" destination="c85-Y2-khN" eventType="touchUpInside" id="jmR-Je-QLQ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DoctorImage" translatesAutoresizingMaskIntoConstraints="NO" id="71x-3q-RBt">
                                 <rect key="frame" x="98.333333333333329" y="441.66666666666674" width="196.33333333333337" height="213"/>
@@ -138,6 +141,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="patientTapButton:" destination="c85-Y2-khN" eventType="touchUpInside" id="na2-Bp-CYn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e5p-JN-LvV"/>
@@ -650,10 +656,10 @@
             </objects>
             <point key="canvasLocation" x="4124.4274809160306" y="-35.211267605633807"/>
         </scene>
-        <!--Profile-->
+        <!--DProfileVC-->
         <scene sceneID="Lnz-pd-G3X">
             <objects>
-                <viewController id="Aa5-vA-Lyp" customClass="ViewController" customModule="CardiacticApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Aa5-vA-Lyp" userLabel="DProfileVC" customClass="DProfileVC" customModule="CardiacticApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zh4-N8-lvS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -661,7 +667,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEe-S6-Q0c">
                                 <rect key="frame" x="0.0" y="59" width="393" height="68"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-UI-TjP">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-UI-TjP">
                                         <rect key="frame" x="9.6666666666666679" y="16.666666666666671" width="39.333333333333329" height="35"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="arrowshape.backward.fill" catalog="system"/>
@@ -795,6 +801,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld6-k4-vsj">
                                         <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="68.333333333333329"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="personalDetailsButton:" destination="Aa5-vA-Lyp" eventType="touchUpInside" id="tpG-Nt-sHx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -850,6 +859,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-CE-iRf">
                                         <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="68.333333333333329"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="changePasswordButton:" destination="Aa5-vA-Lyp" eventType="touchUpInside" id="PvI-ha-M8C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -901,6 +913,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNg-Ui-Cgw">
                                         <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="68.333333333333329"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="logoutButton:" destination="Aa5-vA-Lyp" eventType="touchUpInside" id="zyR-Qa-iHu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -973,6 +988,12 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="User" selectedImage="User" id="YVf-qc-Akt">
                         <color key="badgeColor" name="AppColour"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="fieldLabel" destination="CeY-Lv-j2B" id="jYM-Jm-giH"/>
+                        <outlet property="idLabel" destination="SLq-k8-NJO" id="qEH-Aj-WF4"/>
+                        <outlet property="nameLabel" destination="iV4-dW-9Go" id="hj0-5b-icD"/>
+                        <outlet property="profileImage" destination="0uc-eI-WxL" id="vue-y1-bFa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipN-7Y-LG9" sceneMemberID="firstResponder"/>
             </objects>
@@ -993,8 +1014,11 @@
                                         <rect key="frame" x="9.6666666666666643" y="16.666666666666671" width="58.999999999999993" height="35"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="arrowshape.backward.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="backbutton:" destination="q1k-5F-YD0" eventType="touchUpInside" id="QH6-rR-azU"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-Tn-ZRV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient List" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-Tn-ZRV">
                                         <rect key="frame" x="118" y="6.6666666666666679" width="157" height="54.666666666666657"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" name="TitleColor"/>
@@ -1024,7 +1048,6 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="hl1-Tn-ZRV"/>
                                         <exclude reference="cBe-wW-EJo"/>
                                     </mask>
                                 </variation>
@@ -1085,10 +1108,10 @@
             </objects>
             <point key="canvasLocation" x="5653" y="-35"/>
         </scene>
-        <!--View Controller-->
+        <!--DAddPatientVC-->
         <scene sceneID="5hr-tm-i7t">
             <objects>
-                <viewController id="qGL-Qv-T0I" customClass="ViewController" customModule="CardiacticApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DAddPatientVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qGL-Qv-T0I" userLabel="DAddPatientVC" customClass="DAddPatientVC" customModule="CardiacticApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xm5-rJ-ceE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1106,6 +1129,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createTapButton:" destination="qGL-Qv-T0I" eventType="touchUpInside" id="qeB-fM-DRS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHf-UX-LLr">
                                 <rect key="frame" x="19.666666666666657" y="137" width="353.66666666666674" height="42.666666666666657"/>
@@ -1174,6 +1200,9 @@
                                         <rect key="frame" x="9.6666666666666643" y="16.666666666666671" width="58.999999999999993" height="35"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="arrowshape.backward.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="backbutton:" destination="qGL-Qv-T0I" eventType="touchUpInside" id="Gmt-DO-0So"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Patient" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0X-ZX-O6Z">
                                         <rect key="frame" x="78.666666666666671" y="6.6666666666666679" width="235.66666666666663" height="54.666666666666657"/>
@@ -1260,6 +1289,14 @@
                             <constraint firstItem="xHf-UX-LLr" firstAttribute="top" secondItem="KnD-3m-jDM" secondAttribute="bottom" constant="10" id="xML-mK-X7a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="nVQ-13-jQC" id="EDS-vx-BG6"/>
+                        <outlet property="ageTextField" destination="Qr7-Of-ndF" id="5U0-df-KIt"/>
+                        <outlet property="genderTextField" destination="Y0O-H9-6n8" id="mEW-gJ-Mwn"/>
+                        <outlet property="nameTextField" destination="Dcj-th-9Bz" id="vYa-1b-t6i"/>
+                        <outlet property="phoneTextField" destination="dxH-fc-6Vo" id="ZgR-ti-Dou"/>
+                        <outlet property="titleLabel" destination="U0X-ZX-O6Z" id="v68-KK-wxk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwc-sG-D3D" sceneMemberID="firstResponder"/>
             </objects>
@@ -2768,6 +2805,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addPatientButton:" destination="hE0-ut-Fht" eventType="touchUpInside" id="abb-Rh-lA0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnJ-sR-m6v">
                                         <rect key="frame" x="197.33333333333331" y="0.0" width="117" height="42.666666666666664"/>
@@ -2785,6 +2825,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showAllButton:" destination="hE0-ut-Fht" eventType="touchUpInside" id="VaY-sF-axH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -2954,7 +2997,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

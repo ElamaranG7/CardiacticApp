@@ -18,7 +18,7 @@ class GetStartedVC: UIViewController {
 
     @IBAction func TapLoginBtn(_ sender: Any) {
 
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "RoleSelectionVC") as! RoleSelectionVC
         self.navigationController?.pushViewController(vc, animated: true)
           
     }

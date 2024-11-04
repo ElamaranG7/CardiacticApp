@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -82,7 +81,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="BackGroundColor"/>
                                 <constraints>
                                     <constraint firstItem="rP7-XJ-hKl" firstAttribute="centerX" secondItem="6vf-0v-bs8" secondAttribute="centerX" id="FwK-Qp-yvA"/>
                                     <constraint firstItem="rP7-XJ-hKl" firstAttribute="height" secondItem="6vf-0v-bs8" secondAttribute="height" multiplier="0.95" id="JTt-eu-zoQ"/>
@@ -106,7 +105,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackGroundColor"/>
                         <constraints>
                             <constraint firstItem="NO5-wX-eM7" firstAttribute="width" secondItem="rbf-m1-KFD" secondAttribute="width" multiplier="0.25" id="51i-xB-o0B"/>
                             <constraint firstItem="6vf-0v-bs8" firstAttribute="leading" secondItem="NO5-wX-eM7" secondAttribute="trailing" id="6F4-xN-gtP"/>
@@ -139,11 +138,11 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="conditionLabel" destination="zy7-L5-TcR" id="T1L-RL-JSN"/>
-                <outlet property="genderLabel" destination="hCK-pz-1zP" id="cmb-cA-g1D"/>
                 <outlet property="idLabel" destination="NFj-KU-ABQ" id="9yr-53-g0L"/>
                 <outlet property="mainView" destination="rbf-m1-KFD" id="jVh-zB-jzN"/>
                 <outlet property="nameLabel" destination="Voc-XL-CJ2" id="mgY-qe-4RE"/>
                 <outlet property="patientImage" destination="NO5-wX-eM7" id="rIN-t0-Syd"/>
+                <outlet property="stageLabel" destination="hCK-pz-1zP" id="uPN-BX-rXW"/>
             </connections>
             <point key="canvasLocation" x="68.702290076335871" y="19.366197183098592"/>
         </tableViewCell>
@@ -153,8 +152,8 @@
         <namedColor name="AppColour">
             <color red="0.098039215686274508" green="0.12941176470588237" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="BackGroundColor">
+            <color red="0.96862745098039216" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

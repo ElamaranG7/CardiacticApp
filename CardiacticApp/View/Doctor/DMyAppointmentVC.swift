@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DMyAppointmentVC: UIViewController {
 
@@ -17,30 +18,56 @@ class DMyAppointmentVC: UIViewController {
         }
     }
     
+    var appointmentsListData: [AppointmentsListData]? = []
+    var appointmentListVM = AppointmentsListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        apiCall()
+    }
 
 
+}
+extension DMyAppointmentVC{
+   
+    func apiCall(){
+        
+        appointmentListVM.appointmentsListApiCall { response,status,message   in
+            if let responseData = response {
+                if status {
+                    self.appointmentsListData = response ?? []
+                    ToastManager.shared.showToast(message: message, in: self.view)
+                    self.appointmentsListTableView.reloadData()
+                }else {
+                    ToastManager.shared.showToast(message: message, in: self.view)
+                }
+            }
+        }
+    }
 }
 
 extension DMyAppointmentVC: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return appointmentsListData?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = appointmentsListTableView.dequeueReusableCell(withIdentifier: "AppointmentListTableViewCell", for: indexPath) as! AppointmentListTableViewCell
-        
-        cell.nameLabel.text = " Elamaran \(indexPath.row + 1)"
-        
-       
-        
+        if let datas = appointmentsListData?[indexPath.row]{
+            cell.nameLabel.text = datas.name
+            cell.phoneLabel.text = datas.phoneNumber
+            cell.timeLabel.text = datas.time
+            if let image = datas.profilePic, image != ""{
+                let url = URL(string: APIList.baseURL + image)
+                cell.patientImage.kf.setImage(with: url)
+            }
+        }
         return cell
     }
 

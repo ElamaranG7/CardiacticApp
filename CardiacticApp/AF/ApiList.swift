@@ -19,5 +19,7 @@ struct APIList {
 enum Endpoint: String {
     
     case dLoginUrl = "login_doc.php"
-    
+    case dPatientListUrl = "patient_list.php"
+    case dAppointmentListUrl = "myappointments_doc.php"
+    case dProfileUrl = "doctor_profile_view.php"
 }
