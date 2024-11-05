@@ -30,6 +30,7 @@ class DHomePageVC: UIViewController {
     }
     @IBAction func addPatientButton(_ sender: Any) {
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "DAddPatientVC") as? DAddPatientVC else { return }
+        vc.titleName = "Add Patient"
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func showAllButton(_ sender: Any) {

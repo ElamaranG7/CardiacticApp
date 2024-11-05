@@ -22,4 +22,6 @@ enum Endpoint: String {
     case dPatientListUrl = "patient_list.php"
     case dAppointmentListUrl = "myappointments_doc.php"
     case dProfileUrl = "doctor_profile_view.php"
+    case dAddPatientUrl = "addpatient.php"
+    
 }

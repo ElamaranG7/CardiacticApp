@@ -1290,8 +1290,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="Y52-5N-ygE" id="KQq-aG-wwU"/>
                         <outlet property="addressTextField" destination="nVQ-13-jQC" id="EDS-vx-BG6"/>
                         <outlet property="ageTextField" destination="Qr7-Of-ndF" id="5U0-df-KIt"/>
+                        <outlet property="createButton" destination="fi1-AC-De1" id="f5L-Gz-1N9"/>
                         <outlet property="genderTextField" destination="Y0O-H9-6n8" id="mEW-gJ-Mwn"/>
                         <outlet property="nameTextField" destination="Dcj-th-9Bz" id="vYa-1b-t6i"/>
                         <outlet property="phoneTextField" destination="dxH-fc-6Vo" id="ZgR-ti-Dou"/>

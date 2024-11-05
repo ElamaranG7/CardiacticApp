@@ -29,7 +29,6 @@ class DProfileVC: UIViewController {
     func intialLoads(){
         nameLabel.text = "Dr. \(profileData?.data.name ?? "")"
         idLabel.text = "ID : \(profileData?.data.doctorID ?? "")"
-//        fieldLabel.text = profileData?.data.doctorID
         if profileData?.data.profileDoc != "" && profileData?.data.profileDoc != nil{
             if let url = URL(string: APIList.baseURL + (profileData?.data.profileDoc ?? "")){
                 profileImage.kf.setImage(with: url)
@@ -40,6 +39,10 @@ class DProfileVC: UIViewController {
     
     
     @IBAction func personalDetailsButton(_ sender: Any) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "DAddPatientVC") as? DAddPatientVC else { return }
+        vc.titleName = "My Details"
+        vc.profileData = profileData
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     @IBAction func changePasswordButton(_ sender: Any) {

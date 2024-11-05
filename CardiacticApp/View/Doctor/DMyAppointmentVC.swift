@@ -37,7 +37,7 @@ extension DMyAppointmentVC{
     func apiCall(){
         
         appointmentListVM.appointmentsListApiCall { response,status,message   in
-            if let responseData = response {
+            if response != nil {
                 if status {
                     self.appointmentsListData = response ?? []
                     ToastManager.shared.showToast(message: message, in: self.view)
